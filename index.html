@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiyaur Rahman — Full-Stack Developer & Portfolio</title>
+  <meta name="description" content="Portfolio of Jiyaur Rahman, Full-Stack Web Developer & AI Solutions Specialist.">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Preloader Screen -->
+  <div id="loader" class="loader-container">
+    <div class="loader-spinner"></div>
+    <div class="loader-progress" id="loaderText">0%</div>
+  </div>
+
+  <!-- Fullscreen Fixed Canvas for Background Scroll Animation -->
+  <canvas id="heroCanvas"></canvas>
+
+  <!-- Content Overlay Layer -->
+  <div class="content-wrapper">
+
+    <!-- Top Navigation Bar -->
+    <header class="header" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <span class="logo-icon"></span>
+          <span class="logo-text">Jiyaur</span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="#home" class="nav-item active">Home</a>
+          <a href="#about-section" class="nav-item">About</a>
+          <a href="#all-services" class="nav-item">Services</a>
+          <a href="#featured-projects" class="nav-item">Projects</a>
+          <a href="#testimonials" class="nav-item">Testimonials</a>
+          <a href="#work-process" class="nav-item">Process</a>
+          <a href="#consultation-cta" class="nav-item">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+
+        <!-- Left Hero Content -->
+        <div class="hero-left">
+          <span class="hero-greeting">I'm</span>
+          <h1 class="hero-title">
+            Jiyaur Rahman
+            <span class="title-underline"></span>
+          </h1>
+          <p class="hero-bio">
+            A full-stack developer who provides services for digital programming, web applications, and AI agent
+            solutions for all businesses.
+          </p>
+        </div>
+
+        <!-- Center Space reserved for background canvas scroll animation -->
+        <div class="hero-center-space"></div>
+
+        <!-- Right Hero Content -->
+        <div class="hero-right">
+          <span class="section-label">Services</span>
+          <h2 class="services-headline">
+            Let's build quality products in programming and design with my services
+          </h2>
+          <a href="#all-services" class="show-more-link">
+            <span>Show more</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+
+          <!-- Social Buttons -->
+          <div class="social-row">
+            <a href="#" class="social-circle" aria-label="Facebook">f</a>
+            <a href="#" class="social-circle" aria-label="Twitter">t</a>
+            <a href="#" class="social-circle" aria-label="Instagram">i</a>
+            <a href="#" class="social-circle" aria-label="Pinterest">p</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Client / Brand Logos Section -->
+    <section class="brands-section">
+      <div class="brands-container glass-card">
+        <div class="brand-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#0668E1">
+            <path
+              d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+          </svg>
+          <span>Meta</span>
+        </div>
+        <div class="brand-item">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#4285F4"
+              d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z" />
+            <path fill="#34A853"
+              d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.11-6.72-4.96H1.26v3.15C3.25 21.3 7.31 24 12 24z" />
+            <path fill="#FBBC05"
+              d="M5.28 14.24c-.25-.72-.38-1.49-.38-2.24s.13-1.52.38-2.24V6.61H1.26C.46 8.23 0 10.06 0 12s.46 3.77 1.26 5.39l4.02-3.15z" />
+            <path fill="#EA4335"
+              d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.7 1.26 6.61l4.02 3.15c.95-2.85 3.6-4.96 6.72-4.96z" />
+          </svg>
+          <span>Google</span>
+        </div>
+        <div class="brand-item">
+          <svg width="24" height="24" fill="#0A66C2" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+          <span>LinkedIn</span>
+        </div>
+        <div class="brand-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#E01E5A">
+            <path
+              d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.323A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" />
+          </svg>
+          <span>Slack</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me & My Expertise Section -->
+    <section class="section-container" id="about-section">
+      <div class="grid-2col">
+
+        <!-- Left Box: About Me -->
+        <div class="glass-card card-padding">
+          <div class="card-title-row">
+            <span class="cyan-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </span>
+            <h2 class="card-heading">About Me</h2>
+          </div>
+
+          <p class="about-text">
+            I'm a full-stack developer with a strong focus on building modern, responsive and user-friendly web
+            applications. I enjoy solving complex problems, building AI agents, and continuously learning new
+            technologies.
+          </p>
+
+          <div class="meta-grid">
+            <div class="meta-box">
+              <span class="meta-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg></span>
+              <div>
+                <span class="meta-label">Name</span>
+                <span class="meta-val">Jiyaur Rahman</span>
+              </div>
+            </div>
+
+            <div class="meta-box">
+              <span class="meta-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg></span>
+              <div>
+                <span class="meta-label">Location</span>
+                <span class="meta-val">Remote / Worldwide</span>
+              </div>
+            </div>
+
+            <div class="meta-box">
+              <span class="meta-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg></span>
+              <div>
+                <span class="meta-label">Email</span>
+                <span class="meta-val">contact@jiyaurrahman.com</span>
+              </div>
+            </div>
+
+            <div class="meta-box">
+              <span class="meta-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg></span>
+              <div>
+                <span class="meta-label">Availability</span>
+                <span class="meta-val badge-open"><span class="green-dot"></span> Open to Work</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#consultation-cta" class="btn-more">
+            <span>More About Me</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Right Box: My Expertise -->
+        <div class="glass-card card-padding">
+          <div class="card-title-row">
+            <span class="cyan-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </span>
+            <h2 class="card-heading">My Expertise</h2>
+          </div>
+
+          <div class="skills-wrapper">
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript / TypeScript</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>React / Next.js</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Node.js / Express</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python / AI Agents</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>SQL / MongoDB</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML / CSS / Tailwind</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services Grid (8 Services) -->
+    <section class="section-container" id="all-services">
+      <div class="section-header-simple text-center">
+        <h2 class="section-heading-large">Services</h2>
+      </div>
+
+      <div class="services-grid-8">
+
+        <div class="service-grid-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M18 20V10M12 20V4M6 20v-6" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Website<br>Development</h3>
+          <a href="services.html#web-dev" class="service-card-btn">View Details &rarr;</a>
+        </div>
+
+        <div class="service-grid-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Graphic<br>Designing</h3>
+          <a href="services.html#graphic-design" class="service-card-btn">View Details &rarr;</a>
+        </div>
+
+        <div class="service-grid-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 20h9" />
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">UI/UX Web<br>Designing</h3>
+          <a href="services.html#uiux-design" class="service-card-btn">View Details &rarr;</a>
+        </div>
+
+        <div class="service-grid-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Sketch<br>Designing</h3>
+          <a href="services.html#sketch-design" class="service-card-btn">View Details &rarr;</a>
+        </div>
+
+        <div class="service-grid-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <circle cx="11.5" cy="14.5" r="2.5" />
+              <line x1="18" y1="18" x2="13.3" y2="16.3" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">SEO & Content<br>Writing</h3>
+          <a href="services.html#seo-content" class="service-card-btn">View Details &rarr;</a>
+        </div>
+
+        <div class="service-grid-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Digital Market<br>Planning</h3>
+          <a href="services.html#digital-marketing" class="service-card-btn">View Details &rarr;</a>
+        </div>
+
+        <div class="service-grid-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Business<br>Management</h3>
+          <a href="services.html#business-mgmt" class="service-card-btn">View Details &rarr;</a>
+        </div>
+
+        <div class="service-grid-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+              <path d="M3 20h18" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Market Data<br>Analysing</h3>
+          <a href="services.html#data-analysis" class="service-card-btn">View Details &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section-container" id="featured-projects">
+      <div class="section-header-flex">
+        <div class="title-group">
+          <span class="section-tag">PORTFOLIO</span>
+          <h2 class="section-heading">Featured <span class="highlight-text">Projects</span></h2>
+        </div>
+
+        <div class="filter-tabs" id="projectFilterTabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="websites">Websites</button>
+          <button class="filter-tab" data-filter="webapps">Web Apps</button>
+          <button class="filter-tab" data-filter="uiux">UI/UX Design</button>
+          <button class="filter-tab" data-filter="branding">Branding</button>
+        </div>
+      </div>
+
+      <div class="featured-grid">
+
+        <div class="featured-card" data-category="webapps">
+          <div class="featured-thumb thumb-nexora">
+            <div class="thumb-overlay"></div>
+          </div>
+          <div class="featured-info">
+            <div class="featured-meta">
+              <h3 class="featured-title">Nexora Dashboard</h3>
+              <span class="featured-category">Web Application</span>
+            </div>
+            <a href="#" class="featured-arrow-btn" aria-label="Nexora Dashboard">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="featured-card" data-category="websites">
+          <div class="featured-thumb thumb-crypto">
+            <div class="thumb-overlay"></div>
+          </div>
+          <div class="featured-info">
+            <div class="featured-meta">
+              <h3 class="featured-title">CryptoSphere</h3>
+              <span class="featured-category">Website Design</span>
+            </div>
+            <a href="#" class="featured-arrow-btn" aria-label="CryptoSphere">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="featured-card" data-category="uiux">
+          <div class="featured-thumb thumb-smarthome">
+            <div class="thumb-overlay"></div>
+          </div>
+          <div class="featured-info">
+            <div class="featured-meta">
+              <h3 class="featured-title">SmartHome UI</h3>
+              <span class="featured-category">Mobile App Design</span>
+            </div>
+            <a href="#" class="featured-arrow-btn" aria-label="SmartHome UI">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="featured-card" data-category="branding">
+          <div class="featured-thumb thumb-photon">
+            <div class="thumb-overlay"></div>
+          </div>
+          <div class="featured-info">
+            <div class="featured-meta">
+              <h3 class="featured-title">Photon Studio</h3>
+              <span class="featured-category">Branding & Website</span>
+            </div>
+            <a href="#" class="featured-arrow-btn" aria-label="Photon Studio">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="center-btn-row">
+        <a href="#consultation-cta" class="btn-outline-pill">
+          <span>View All Projects</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M7 17L17 7M17 7H7M17 7V17" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Free Consultation Banner -->
+    <section class="section-container" id="consultation-cta">
+      <div class="cta-banner-box">
+
+        <div class="cta-left">
+          <div class="cta-phone-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </div>
+          <div class="cta-phone-info">
+            <span class="cta-tag">GET A FREE CONSULTATION</span>
+            <span class="cta-phone-num">987 233 0000</span>
+          </div>
+        </div>
+
+        <div class="cta-center">
+          <p>
+            Ready to elevate your digital presence? Book a free consultation to discuss your web application, UI/UX, or
+            AI project requirements.
+          </p>
+        </div>
+
+        <div class="cta-right">
+          <a href="mailto:contact@jiyaurrahman.com" class="btn-appointment">MAKE APPOINTMENT</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- What Clients Say / Testimonials Section -->
+    <section class="section-container" id="testimonials">
+      <div class="section-header-simple">
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2 class="section-heading">What <span class="highlight-text">Clients Say</span></h2>
+      </div>
+
+      <div class="testimonials-grid" id="testimonialSlider">
+
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-quote">
+            "Jiyaur transformed our idea into a stunning web application. Highly professional, creative and delivers
+            beyond expectations."
+          </p>
+          <div class="testimonial-footer">
+            <div class="client-profile">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80"
+                alt="Sarah Johnson" class="client-avatar">
+              <div class="client-details">
+                <h4 class="client-name">Sarah Johnson</h4>
+                <span class="client-role">CEO, TechNova</span>
+              </div>
+            </div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-quote">
+            "Amazing experience working with Jiyaur. Great communication, clean code and on-time delivery for our
+            scalable platform."
+          </p>
+          <div class="testimonial-footer">
+            <div class="client-profile">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80"
+                alt="Michael Thompson" class="client-avatar">
+              <div class="client-details">
+                <h4 class="client-name">Michael Thompson</h4>
+                <span class="client-role">Founder, CryptoSphere</span>
+              </div>
+            </div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-quote">
+            "The UI/UX design was top-notch and the attention to detail is incredible. Highly recommended developer,
+            will work together again!"
+          </p>
+          <div class="testimonial-footer">
+            <div class="client-profile">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80"
+                alt="Emily Roberts" class="client-avatar">
+              <div class="client-details">
+                <h4 class="client-name">Emily Roberts</h4>
+                <span class="client-role">Product Manager, Univo</span>
+              </div>
+            </div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="testimonial-controls">
+        <div class="dots-pagination">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="arrow-nav">
+          <button class="nav-arrow-btn prev-btn" aria-label="Previous Testimonial">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+          <button class="nav-arrow-btn next-btn" aria-label="Next Testimonial">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Work Process Section -->
+    <section class="section-container" id="work-process">
+      <div class="card-title-row title-space">
+        <span class="cyan-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+          </svg>
+        </span>
+        <h2 class="card-heading">My Work Process</h2>
+      </div>
+
+      <div class="timeline-track">
+
+        <div class="timeline-step">
+          <div class="step-icon-circle">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </div>
+          <span class="step-num">01</span>
+          <h3 class="step-name">Discover</h3>
+          <p class="step-desc">Understanding goals, requirements and project scope.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-icon-circle">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+            </svg>
+          </div>
+          <span class="step-num">02</span>
+          <h3 class="step-name">Plan</h3>
+          <p class="step-desc">Planning architecture, tech stack and project roadmap.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-icon-circle">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 20h9" />
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+            </svg>
+          </div>
+          <span class="step-num">03</span>
+          <h3 class="step-name">Design</h3>
+          <p class="step-desc">Creating wireframes and beautiful UI/UX designs.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-icon-circle">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <span class="step-num">04</span>
+          <h3 class="step-name">Develop</h3>
+          <p class="step-desc">Writing clean, scalable and efficient code with best practices.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-icon-circle">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <polyline points="9 12 11 14 15 10" />
+            </svg>
+          </div>
+          <span class="step-num">05</span>
+          <h3 class="step-name">Test</h3>
+          <p class="step-desc">Testing for bugs, performance and cross-browser issues.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-icon-circle">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+              <path
+                d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z" />
+            </svg>
+          </div>
+          <span class="step-num">06</span>
+          <h3 class="step-name">Deploy</h3>
+          <p class="step-desc">Deploying to production and ensuring smooth launch.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEND-STYLE HIGH-END EDITORIAL FOOTER -->
+    <footer class="resend-footer">
+      <div class="footer-container">
+
+        <!-- Giant Metallic 3D Display Branding Title -->
+        <div class="footer-hero-brand">
+          <span class="chrome-brand-text">JIYAUR RAHMAN</span>
+        </div>
+
+        <!-- Multi-Column Links & Status Grid -->
+        <div class="footer-columns-grid">
+
+          <!-- Column 1: Info & Operational Status Badge -->
+          <div class="footer-col info-col">
+            <p class="location-text">Available Worldwide / Remote</p>
+            <div class="system-status-badge">
+              <span class="status-green-dot"></span>
+              <span>All systems normal</span>
+            </div>
+            <div class="footer-social-icons">
+              <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18"
+                  height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg></a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18"
+                  height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg></a>
+              <a href="mailto:contact@jiyaurrahman.com" aria-label="Email"><svg width="18" height="18" fill="none"
+                  stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation -->
+          <div class="footer-col">
+            <h4 class="col-heading">Navigation</h4>
+            <ul class="col-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-section">About</a></li>
+              <li><a href="#all-services">Services</a></li>
+              <li><a href="#featured-projects">Featured Work</a></li>
+              <li><a href="#work-process">Process</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Services / Expertise -->
+          <div class="footer-col">
+            <h4 class="col-heading">Services</h4>
+            <ul class="col-links">
+              <li><a href="#all-services">UI/UX Web Design</a></li>
+              <li><a href="#all-services">Web Redesign</a></li>
+              <li><a href="#all-services">App Development</a></li>
+              <li><a href="#all-services">AI Agent Solutions</a></li>
+              <li><a href="#all-services">Headless WordPress</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact -->
+          <div class="footer-col">
+            <h4 class="col-heading">Contact</h4>
+            <ul class="col-links">
+              <li><a href="mailto:contact@jiyaurrahman.com">contact@jiyaurrahman.com</a></li>
+              <li><a href="#consultation-cta">Schedule a Call</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Repositories</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 5: Legal -->
+          <div class="footer-col">
+            <h4 class="col-heading">Legal</h4>
+            <ul class="col-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li class="copy-li">© 2026 Jiyaur Rahman.</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
